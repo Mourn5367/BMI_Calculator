@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/inputMargin"
+        >
+        <!--   title     -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/foodTitle"
+                android:textSize="@dimen/foodTitleSize"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/inputMargin"
+                android:fontFamily="@font/dnf_bit"
+                android:layout_marginRight="@dimen/inputMargin"
+                />
+            <ImageButton
+                android:id="@+id/btnGoToBmi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/weight"
+                android:layout_marginTop="@dimen/inputMargin"
+                android:layout_marginBottom="@dimen/inputMargin"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/inputMargin"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notice"
+
+                />
+        </LinearLayout>
+        <!-- 메뉴   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputHeight"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:src="@drawable/menu"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:text="@string/userMenu"
+                android:textSize="@dimen/inputTextSize" />
+
+            <AutoCompleteTextView
+                android:id="@+id/inputMenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:hint="@string/hintMenu"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/inputTextSize"
+                android:inputType="text"
+                />
+        </LinearLayout>
+
+        <!-- 칼로리   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputHeight"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:src="@drawable/kcal"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:text="@string/kcal"
+                android:textSize="@dimen/inputTextSize" />
+
+            <EditText
+                android:id="@+id/textKcal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/inputTextSize"
+                android:focusable="false"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:longClickable="false"
+                />
+        </LinearLayout>
+        <!-- 단백질   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputHeight"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:src="@drawable/protein"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:paddingRight="5dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:text="@string/protein"
+                android:textSize="@dimen/inputTextSize" />
+
+            <EditText
+                android:id="@+id/textProtein"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/inputTextSize"
+                android:focusable="false"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:longClickable="false"
+                />
+        </LinearLayout>
+        <!-- 당류   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputHeight"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:src="@drawable/sugar"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:paddingLeft="10dp"
+               />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:text="@string/sugar"
+                android:textSize="@dimen/inputTextSize" />
+
+            <EditText
+                android:id="@+id/textSugar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/inputTextSize"
+                android:focusable="false"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:longClickable="false"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/btnApiCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/btnSideMargin"
+                android:layout_marginRight="@dimen/btnSideMargin"
+                android:layout_marginBottom="@dimen/inputMargin"
+                android:backgroundTint="@color/resultTextBack"
+                android:letterSpacing="0.5"
+                android:text="@string/btnCal"
+                android:textSize="@dimen/btnTextSize"
+                android:textStyle="bold"
+                android:enabled="false"
+                />
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/btnSideMargin"
+                android:layout_marginRight="@dimen/btnSideMargin"
+                android:backgroundTint="@android:color/transparent"
+                android:letterSpacing="0.5"
+                android:text="@string/btnReset"
+                android:textColor="@color/red"
+                android:textSize="@dimen/btnTextSize"
+                android:textStyle="bold"
+                app:strokeColor="@color/red"
+                app:strokeWidth="3dp"
+                />
+        </LinearLayout>
+        <!--   설명 / 이미지 출력층    -->
+        <LinearLayout
+            android:id="@+id/resultLayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/inputMargin"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/textResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/inputMargin"
+                android:background="@drawable/textborder"
+                android:text=""
+                android:padding="@dimen/inputMargin"
+                android:gravity="center"
+                android:lineSpacingExtra="6dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageResult"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/inputMargin"
+                />
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:lottie_rawRes="@raw/eating"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

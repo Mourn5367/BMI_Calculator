@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BMI_Calculator</string>
+    <string name="bmiTitle">BMI 계산기</string>
+    <string name="foodTitle">영양성분 계산기</string>
+    <string name="name">성명</string>
+    <string name="height">신장</string>
+    <string name="weight">몸무게</string>
+    <string name="kcal">칼로리 : </string>
+    <string name="protein">단백질 : </string>
+    <string name="sugar">당류 : </string>
+    <string name="menu">메뉴</string>
+    <string name="notice">모든 성분은 100g 또는 100ml 기준입니다.</string>
+
+
+    <string name="userName">성명 : </string>
+    <string name="hintName"> 성명을 입력하시오</string>
+    <string name="userWeight">몸무게  : </string>
+    <string name="hintWeight"> 몸무게를 입력하시오</string>
+    <string name="userHeight">신장   : </string>
+    <string name="hintHeight"> 신장을 입력하시오(CM)</string>
+    <string name="userMenu">메뉴 : </string>
+    <string name="hintMenu"> 메뉴를 입력하시오</string>
+    <string name="btnCal">측정</string>
+    <string name="btnReset">초기화</string>
+
+    <string name="underWeight">저체중</string>
+    <string name="normalWeight">정상체중</string>
+    <string name="overWeight">과체중</string>
+    <string name="obeseWeight">비만</string>
+    <string name="severelyObeseWeight">고도비만</string>
+
+    <string name="underWeightDescribe">영양 섭취를 균형 있게 조절하고, 체중 증가를 위한 식이요법이 권장됩니다.</string>
+    <string name="normalWeightDescribe">현재 체중은 정상 범위에 해당하며,\n지속적인 자기 관리가 요구됩니다.</string>
+    <string name="overWeightDescribe">체중 감량을 위한 식단 조절 및 유산소 운동이 필요합니다.</string>
+    <string name="obeseWeightDescribe">비만 상태로 분류되며,\n생활습관 개선과 체중 관리가 필요합니다.</string>
+    <string name="severelyObeseWeightDescribe">고도비만에 해당하며,\n건강 위험이 증가하므로 전문적인 관리가 필요합니다.</string>
+</resources>
