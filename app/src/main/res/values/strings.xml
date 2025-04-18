@@ -32,6 +32,6 @@
     <string name="underWeightDescribe">영양 섭취를 균형 있게 조절하고, 체중 증가를 위한 식이요법이 권장됩니다.</string>
     <string name="normalWeightDescribe">현재 체중은 정상 범위에 해당하며,\n지속적인 자기 관리가 요구됩니다.</string>
     <string name="overWeightDescribe">체중 감량을 위한 식단 조절 및 유산소 운동이 필요합니다.</string>
-    <string name="obeseWeightDescribe">비만 상태로 분류되며,\n생활습관 개선과 체중 관리가 필요합니다.</string>
-    <string name="severelyObeseWeightDescribe">고도비만에 해당하며,\n건강 위험이 증가하므로 전문적인 관리가 필요합니다.</string>
+    <string name="obeseWeightDescribe">생활습관 개선과 체중 관리가 필요합니다.</string>
+    <string name="severelyObeseWeightDescribe">건강 위험이 증가하므로 전문적인 관리가 필요합니다.</string>
 </resources>

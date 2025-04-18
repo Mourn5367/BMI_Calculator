@@ -187,6 +187,7 @@ public class MainActivity extends AppCompatActivity {
                     double weight = Double.parseDouble(inputFields[2].getText().toString());
 
                     double bmiResult = weight/ Math.pow((height/100.0),2);
+                    String formattedBmiResult = String.format("%.2f", bmiResult);
                     String resultBMI = "";
                     String resultAdvice = "";
 
@@ -238,7 +239,7 @@ public class MainActivity extends AppCompatActivity {
                     binding.resultLayer.setVisibility(View.VISIBLE);
                     // BMI 결과 텍스트 조합
                     String part1 = name + "님의 키는 " + height + "cm, 몸무게는 " + weight + "kg 입니다.\n따라서 "
-                            + name +"님의 BMI는 ";
+                            + name +"님의 BMI는 " + formattedBmiResult+ "kg/㎡, ";
                     String part2 = resultBMI;
                     String part3 = "으로 측정되었습니다." +"\n"+resultAdvice;
 
