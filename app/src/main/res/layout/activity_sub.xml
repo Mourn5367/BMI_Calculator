@@ -37,9 +37,11 @@
                 android:id="@+id/btnGoToBmi"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@drawable/weight"
-                android:layout_marginTop="@dimen/inputMargin"
+                android:src="@drawable/weight"
+                android:background="@null"
                 android:layout_marginBottom="@dimen/inputMargin"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
                 />
         </LinearLayout>
         <LinearLayout
