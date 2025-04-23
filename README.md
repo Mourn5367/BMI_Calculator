@@ -51,4 +51,4 @@ App 순서도
 </div>
 시연 영상
 
-[![youtube](http://img.youtube.com/vi/your_video_id/0.jpg)](https://youtube.com/shorts/mCzW7X5DYqI?feature=share)
+[![youtube](http://img.youtube.com/vi/mCzW7X5DYqI/0.jpg)](https://youtube.com/shorts/mCzW7X5DYqI?feature=share)
