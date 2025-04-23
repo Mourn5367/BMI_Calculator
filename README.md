@@ -28,31 +28,24 @@ BMI 계산기
 6. 초기화 버튼 클릭시 입력, 출력한 텍스트를 초기화 합니다.
 
 App 레이아웃 및 이미지 파일
-<div style="width: 300px;">
-    <img src="https://velog.velcdn.com/images/mourn5367/post/e9be339f-ec41-42f9-b0cf-1370eaa4d564/image.png" alt="이미지 설명" style="width: 100%;">
+<div >
+    <img src="https://velog.velcdn.com/images/mourn5367/post/e9be339f-ec41-42f9-b0cf-1370eaa4d564/image.png" alt="이미지 설명">
 </div>
-<div>
-    <span style="margin-right: 100px;">
-        <img src="https://velog.velcdn.com/images/mourn5367/post/5c594a42-f47e-4d98-9b2f-29e3cbdbe344/image.png" alt="이미지 설명">
-    </span>
-    <span>
-        <img src="https://velog.velcdn.com/images/mourn5367/post/ba24d768-c1ca-4803-976a-c388bd0f00ad/image.png" alt="이미지 설명">
-    </span>
+<div >
+        <img style="margin: 30 30px;" src="https://velog.velcdn.com/images/mourn5367/post/5c594a42-f47e-4d98-9b2f-29e3cbdbe344/image.png" alt="이미지 설명" >
+        <img style="margin: 30 30px;" src="https://velog.velcdn.com/images/mourn5367/post/ba24d768-c1ca-4803-976a-c388bd0f00ad/image.png" alt="이미지 설명">
 </div>
-<div style="width: 150px;">
-   
-</div>
-<div style="width: 300px;">
+
+<div >
     <img src="https://velog.velcdn.com/images/mourn5367/post/599d0a29-7175-4cf4-bbe8-58e5afcf1565/image.png" alt="이미지 설명">
 </div>
-<div style="width: 300px;">
+<div >
     <img src="https://velog.velcdn.com/images/mourn5367/post/5b089bc4-4ae5-4e8f-ae89-2a7098187422/image.png" alt="이미지 설명">
-</div>
-<div style="width: 300px;">
     <img src="https://velog.velcdn.com/images/mourn5367/post/895477e0-86fe-4485-a615-b665b28a5197/image.png" alt="이미지 설명" >
-    <img src="https://velog.velcdn.com/images/mourn5367/post/fa1e5b7f-8b79-47fa-8d69-1f62dda9109c/image.png" alt="이미지 설명">
 </div>
 App 순서도
-
+<div >
+    <img src="https://velog.velcdn.com/images/mourn5367/post/fa1e5b7f-8b79-47fa-8d69-1f62dda9109c/image.png" alt="이미지 설명">
+</div>
 시연 영상
 
