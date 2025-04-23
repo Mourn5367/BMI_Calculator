@@ -1,54 +1,91 @@
-<h1>BMI, 음식 성분 계산기</h1>
+<h1 align="center">📱 BMI & 음식 성분 계산기</h1>
 
-사용자는 성명, 신장, 몸무게를 측정하여 BMI 지수와 등급을 알 수 있다.
-또한 메뉴 입력을 통해 칼로리, 단백질, 당류 성분을 구할 수 있다.
+<p align="center">
+  사용자는 성명, 신장, 몸무게를 입력하여 BMI 지수와 등급을 확인할 수 있고,<br>
+  음식 이름을 입력하여 칼로리, 단백질, 당류 성분을 확인할 수 있습니다.
+</p>
 
-기술: Android Studio<br>
-언어: Java <br>
-API: <a href ="https://www.data.go.kr/">공공데이터 포털 
+---
 
-기능
+## 💡 기술 스택
 
-BMI 계산기
+- **플랫폼**: Android Studio  
+- **언어**: Java  
+- **API**: [공공데이터 포털](https://www.data.go.kr/)
 
-1. 사용자는 성명, 신장, 몸무게 입력시 텍스트와 이미지를 통해 검사 결과 여부를 확인할 수 있다.
-2. 미입력 란이 있을 경우 경고 이미지와 토스트 출력을 통해 해당 입력란을 표시한다.
-3. 초기화 버튼 클릭시 입력한 텍스트, 출력 텍스트와 이미지를 삭제하여 초기화면으로 돌아간다.
-4. BMI 계산기 제목의 오른쪽 아이콘을 클릭 시 영양성분 계산기 화면으로 이동한다.
+---
 
+## 🔢 기능 소개
 
-영양성분 계산기
+### ✅ BMI 계산기
 
+1. 사용자는 성명, 신장, 몸무게를 입력하여 BMI 결과를 **텍스트와 이미지**로 확인할 수 있습니다.
+2. 입력하지 않은 항목이 있을 경우, **경고 이미지 및 토스트 메시지**를 통해 사용자에게 알림을 줍니다.
+3. `초기화` 버튼을 클릭하면 입력값, 출력값, 이미지가 초기화됩니다.
+4. BMI 계산기 상단 아이콘 클릭 시 → **영양성분 계산기** 화면으로 이동합니다.
 
-1. 영양성분 계산기 제목의 오른쪽 아이콘 클릭 시 BMI 계산기 화면으로 이동한다.
-2. 사용자는 한 글자 입력시 자동완성 기능을 통해 음식을 선택할 수 있다.
-3. 미 입력시 측정 버튼은 비활성화 상태가 되며 회색으로 변경된다.
-4. 자동완성 기능 혹은 제공하는 음식을 정확하게 입력한 경우 측정 버튼이 활성화된다.
-5. 측정 버튼 클릭시 공공데이터 포털 API 통신을 통해 칼로리 단백질 당류를 출력한다.
-6. 초기화 버튼 클릭시 입력, 출력한 텍스트를 초기화 합니다.
+---
 
-App 레이아웃 및 이미지 파일
-<div >
-    <img src="https://velog.velcdn.com/images/mourn5367/post/e9be339f-ec41-42f9-b0cf-1370eaa4d564/image.png" alt="이미지 설명">
-</div>
-<div >
-        <img  src="https://velog.velcdn.com/images/mourn5367/post/5c594a42-f47e-4d98-9b2f-29e3cbdbe344/image.png" alt="이미지 설명" >
-        <img  src="https://velog.velcdn.com/images/mourn5367/post/ba24d768-c1ca-4803-976a-c388bd0f00ad/image.png" alt="이미지 설명">
-</div>
+### ✅ 영양성분 계산기
 
-<div >
-    <img src="https://velog.velcdn.com/images/mourn5367/post/599d0a29-7175-4cf4-bbe8-58e5afcf1565/image.png" alt="이미지 설명">
-</div>
+1. 상단 아이콘 클릭 시 → **BMI 계산기** 화면으로 이동
+2. 음식명 **자동완성 기능** 제공
+3. 입력값 없을 시 `측정 버튼`은 비활성화 및 회색 처리
+4. 유효한 음식 입력 시 `측정 버튼` 활성화
+5. 측정 버튼 클릭 시, 공공데이터 API를 통해 **칼로리 / 단백질 / 당류** 출력
+6. `초기화` 버튼 클릭 시 입력 및 출력 초기화
 
-<div >
-    <img src="https://velog.velcdn.com/images/mourn5367/post/5b089bc4-4ae5-4e8f-ae89-2a7098187422/image.png" alt="이미지 설명">
-    <img src="https://velog.velcdn.com/images/mourn5367/post/895477e0-86fe-4485-a615-b665b28a5197/image.png" alt="이미지 설명">
-</div>
+---
 
-App 순서도
-<div >
-    <img src="https://velog.velcdn.com/images/mourn5367/post/fa1e5b7f-8b79-47fa-8d69-1f62dda9109c/image.png" alt="이미지 설명">
-</div>
-시연 영상
+## 📡 안드로이드 스튜디오에서 API 사용 방법
 
+공공데이터 포털의 식품 영양성분 정보를 활용하기 위해 다음 절차를 따릅니다:
+
+1. [공공데이터 포털 활용 신청](https://www.data.go.kr/data/15100070/standard.do)에 접속하여 **회원가입 및 활용 신청**을 진행합니다.
+2. 활용 신청이 승인되면 발급받은 **일반 인증키(API Key)**를 아래와 같이 안드로이드 프로젝트에 삽입합니다.
+
+   ```properties
+   # local.properties (Android Studio)
+   API_KEY = 발급받은_일반_인증키
+
+주의사항
+`디코딩(Decoding)`된 인증키를 사용할 경우 작동하지 않습니다.
+
+---
+
+## 📱 앱 레이아웃 & UI
+
+<p align="center">
+  <img src="https://velog.velcdn.com/images/mourn5367/post/e9be339f-ec41-42f9-b0cf-1370eaa4d564/image.png">
+</p>
+
+<p align="center">
+  <img src="https://velog.velcdn.com/images/mourn5367/post/5c594a42-f47e-4d98-9b2f-29e3cbdbe344/image.png" width="250" style="margin-right: 10px;">
+  <img src="https://velog.velcdn.com/images/mourn5367/post/ba24d768-c1ca-4803-976a-c388bd0f00ad/image.png" width="250">
+</p>
+
+<p align="center">
+  <img src="https://velog.velcdn.com/images/mourn5367/post/599d0a29-7175-4cf4-bbe8-58e5afcf1565/image.png">
+</p>
+
+<p align="center">
+  <img src="https://velog.velcdn.com/images/mourn5367/post/5b089bc4-4ae5-4e8f-ae89-2a7098187422/image.png" width="250" style="margin-right: 10px;">
+  <img src="https://velog.velcdn.com/images/mourn5367/post/895477e0-86fe-4485-a615-b665b28a5197/image.png" width="250">
+</p>
+
+---
+
+## 🔁 앱 순서도
+
+<p align="center">
+  <img src="https://velog.velcdn.com/images/mourn5367/post/fa1e5b7f-8b79-47fa-8d69-1f62dda9109c/image.png" width="600">
+</p>
+
+---
+
+## 🎬 시연 영상
+<p align="center">
+    
 [![youtube](http://img.youtube.com/vi/mCzW7X5DYqI/0.jpg)](https://youtube.com/shorts/mCzW7X5DYqI?feature=share)
+
+</p>
